@@ -300,7 +300,7 @@ $$
 
 La série ne suffit donc pas à définir directement la fonction dans toute la bande critique.
 
-Grâce au **prolongement analytique**, on étend la fonction zêta à presque tout le plan complexe. La fonction ainsi prolongée est méromorphe et possède un pôle simple en $s=1$.
+La fonction zêta admet un prolongement méromorphe à l’ensemble du plan complexe. Ce prolongement possède un unique pôle, simple, en $s=1$, de résidu égal à $1$.
 
 C’est cette fonction prolongée qui intervient dans l’hypothèse de Riemann.
 
@@ -441,10 +441,10 @@ où $t$ est un nombre réel.
 
 Attention : cela ne signifie pas que tous les zéros valent $1/2$. Leur partie imaginaire varie. C’est uniquement leur partie réelle qui devrait toujours être égale à $1/2$.
 
-Le premier zéro non trivial situé au-dessus de l’axe réel est approximativement :
+Le premier zéro non trivial dans le demi-plan supérieur, c’est-à-dire celui dont la partie imaginaire est la plus petite strictement positive, est approximativement :
 
 $$
-\boxed{s=\frac12+14{,}134725\,i}
+\boxed{s=\frac12+14{,}134725\ldots\,i}
 $$
 
 Son conjugué est également un zéro :
@@ -479,6 +479,7 @@ $$
 $$
 
 Cette égalité exprime une symétrie par rapport à la droite critique.
+Cette égalité est une identité entre fonctions méromorphes, valable sur le plan complexe par prolongement méromorphe.
 
 En effet, si :
 
@@ -563,10 +564,18 @@ $$
 \boxed{
 \pi(x)=\mathrm{li}(x)
 +O\left(\sqrt{x}\ln(x)\right)
-}
+},
+\qquad x\to+\infty
 $$
 
-La notation $O$ signifie ici que l’erreur est majorée, à une constante multiplicative près, par $\sqrt{x}\ln(x)$ lorsque $x$ devient grand.
+La notation $O$ signifie qu’il existe des constantes $C>0$ et $x_0>1$ telles que, pour tout $x\geq x_0$ :
+
+$$
+\left|\pi(x)-\mathrm{li}(x)\right|
+\leq C\sqrt{x}\ln(x).
+$$
+
+Dans cet énoncé, cette borne est équivalente à l’hypothèse de Riemann.
 
 L’hypothèse de Riemann permettrait donc de contrôler très précisément les fluctuations de la répartition des nombres premiers autour de leur estimation principale.
 
