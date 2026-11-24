@@ -147,13 +147,13 @@ Cette expression décrit une densité moyenne locale. Elle ne constitue pas une 
 
 ## 3. L’intégrale logarithmique
 
-Une approximation particulièrement précise de la fonction de comptage des nombres premiers utilise l’intégrale logarithmique, notée $\operatorname{li}(x)$.
+Une approximation particulièrement précise de la fonction de comptage des nombres premiers utilise l’intégrale logarithmique, notée $\mathrm{li}(x)$.
 
 Pour $x>2$, on peut la définir par :
 
 $$
 \boxed{
-\operatorname{li}(x)=\int_2^x\frac{dt}{\ln(t)}
+\mathrm{li}(x)=\int_2^x\frac{dt}{\ln(t)}
 }
 $$
 
@@ -168,7 +168,7 @@ Dans cette intégrale :
 Par exemple :
 
 $$
-\operatorname{li}(10)
+\mathrm{li}(10)
 =\int_2^{10}\frac{dt}{\ln(t)}
 \approx 5{,}12
 $$
@@ -184,13 +184,13 @@ L’intégrale logarithmique fournit donc une estimation du nombre de nombres pr
 Le théorème des nombres premiers peut également s’écrire :
 
 $$
-\boxed{\pi(x)\sim\operatorname{li}(x)}
+\boxed{\pi(x)\sim\mathrm{li}(x)}
 $$
 
 Cela signifie que :
 
 $$
-\lim_{x\to+\infty}\frac{\pi(x)}{\operatorname{li}(x)}=1
+\lim_{x\to+\infty}\frac{\pi(x)}{\mathrm{li}(x)}=1
 $$
 
 La différence entre ces deux fonctions sera importante pour comprendre les conséquences de l’hypothèse de Riemann.
@@ -253,7 +253,7 @@ $$
 s=\sigma+it
 $$
 
-où $\sigma=\operatorname{Re}(s)$ est la partie réelle et $t=\operatorname{Im}(s)$ la partie imaginaire.
+où $\sigma=\mathrm{Re}(s)$ est la partie réelle et $t=\mathrm{Im}(s)$ la partie imaginaire.
 
 ### 4.2. Quelques exemples dans la série
 
@@ -295,7 +295,7 @@ Les termes et la somme sont alors complexes.
 La série définissant directement la fonction zêta converge absolument lorsque :
 
 $$
-\boxed{\operatorname{Re}(s)>1}
+\boxed{\mathrm{Re}(s)>1}
 $$
 
 La série ne suffit donc pas à définir directement la fonction dans toute la bande critique.
@@ -316,7 +316,7 @@ $$
 \prod_{p\ \mathrm{premier}}
 \frac{1}{1-p^{-s}}
 }
-\qquad \bigl(\operatorname{Re}(s)>1\bigr)
+\qquad \bigl(\mathrm{Re}(s)>1\bigr)
 $$
 
 Le symbole $\prod$ désigne un produit infini. Ici, chaque facteur correspond à un nombre premier $p$.
@@ -394,7 +394,7 @@ Ils se trouvent sur l’axe réel négatif.
 Les zéros non triviaux se trouvent dans la bande critique :
 
 $$
-\boxed{0<\operatorname{Re}(s)<1}
+\boxed{0<\mathrm{Re}(s)<1}
 $$
 
 Ils sont au cœur de l’hypothèse de Riemann.
@@ -408,15 +408,15 @@ Il est important de comprendre que $s$ est un point du plan complexe. La partie 
 Le plan complexe permet de représenter les valeurs de $s$ comme des points de coordonnées :
 
 $$
-\bigl(\operatorname{Re}(s),\operatorname{Im}(s)\bigr)
+\bigl(\mathrm{Re}(s),\mathrm{Im}(s)\bigr)
 $$
 
 La bande critique est la région comprise entre les deux droites verticales :
 
 $$
-\operatorname{Re}(s)=0
+\mathrm{Re}(s)=0
 \qquad\text{et}\qquad
-\operatorname{Re}(s)=1
+\mathrm{Re}(s)=1
 $$
 
 Les zéros non triviaux se trouvent dans cette bande.
@@ -424,7 +424,7 @@ Les zéros non triviaux se trouvent dans cette bande.
 Au milieu de celle-ci se trouve la droite :
 
 $$
-\boxed{\operatorname{Re}(s)=\frac12}
+\boxed{\mathrm{Re}(s)=\frac12}
 $$
 
 Cette droite est appelée **droite critique**.
@@ -535,13 +535,13 @@ $$
 Une approximation particulièrement précise utilise l’intégrale logarithmique :
 
 $$
-\pi(x)\sim\operatorname{li}(x)
+\pi(x)\sim\mathrm{li}(x)
 $$
 
 avec :
 
 $$
-\operatorname{li}(x)=
+\mathrm{li}(x)=
 \int_2^x\frac{dt}{\ln(t)}
 $$
 
@@ -551,7 +551,7 @@ On peut étudier l’écart :
 
 $$
 \boxed{
-E(x)=\pi(x)-\operatorname{li}(x)
+E(x)=\pi(x)-\mathrm{li}(x)
 }
 $$
 
@@ -561,7 +561,7 @@ L’hypothèse de Riemann est équivalente à la borne suivante :
 
 $$
 \boxed{
-\pi(x)=\operatorname{li}(x)
+\pi(x)=\mathrm{li}(x)
 +O\left(\sqrt{x}\ln(x)\right)
 }
 $$
@@ -605,8 +605,8 @@ Le cheminement peut se résumer ainsi :
 1. Les nombres premiers semblent irréguliers lorsqu’on observe leur succession.
 2. Leur répartition globale suit néanmoins une loi asymptotique : le théorème des nombres premiers.
 3. La fonction zêta de Riemann est reliée aux nombres premiers par le produit d’Euler.
-4. Les zéros non triviaux de cette fonction se trouvent dans la bande critique $0<\operatorname{Re}(s)<1$.
-5. L’équation fonctionnelle révèle une symétrie autour de la droite $\operatorname{Re}(s)=1/2$.
+4. Les zéros non triviaux de cette fonction se trouvent dans la bande critique $0<\mathrm{Re}(s)<1$.
+5. L’équation fonctionnelle révèle une symétrie autour de la droite $\mathrm{Re}(s)=1/2$.
 6. L’hypothèse de Riemann affirme que tous les zéros non triviaux se trouvent sur cette droite.
 7. Si elle est vraie, elle fournit une borne très précise sur l’erreur dans le comptage des nombres premiers.
 
