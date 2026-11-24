@@ -57,7 +57,7 @@ Cependant, à grande échelle, leur répartition suit une loi remarquable : les 
 On note $\pi(x)$ le nombre de nombres premiers inférieurs ou égaux à $x$ :
 
 $$
-\boxed{\pi(x)=\sum_{\substack{p\leq x\\p\ \mathrm{premier}}}1}
+\boxed{\pi(x)=\sum_{p\leq x,\ p\text{ premier}}1}
 $$
 
 Par exemple :
